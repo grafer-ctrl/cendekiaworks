@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CendekiaWorks - Android App Developer & Studio</title>
+    <!-- Meta SEO & Safe For Kids -->
+    <meta name="description" content="CendekiaWorks adalah pengembang aplikasi Android independen yang berfokus pada aplikasi yang aman, edukatif, dan ramah keluarga.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="#home" class="flex items-center space-x-2">
+                    <span class="w-10 h-10 bg-indigo-600 text-white rounded-xl flex items-center justify-center font-extrabold text-xl shadow-md shadow-indigo-200">CW</span>
+                    <span class="text-xl font-bold bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">CendekiaWorks</span>
+                </a>
+
+                <!-- Nav Links -->
+                <div class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
+                    <a href="#home" class="hover:text-indigo-600 transition">Beranda</a>
+                    <a href="#about" class="hover:text-indigo-600 transition">Tentang Kami</a>
+                    <a href="#privacy" class="hover:text-indigo-600 transition">Kebijakan Privasi</a>
+                    <a href="#contact" class="hover:text-indigo-600 transition">Kontak</a>
+                </div>
+
+                <!-- Contact CTA Button -->
+                <div class="hidden md:flex">
+                    <a href="#contact" class="inline-flex items-center gap-2 bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-indigo-700 transition shadow-sm">
+                        <i class="fa-solid fa-envelope"></i> Hubungi Developer
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="home" class="relative py-20 lg:py-28 bg-gradient-to-b from-indigo-50/60 via-white to-slate-50 border-b border-slate-200/60">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider mb-6">
+                <i class="fa-solid fa-shapes"></i> Android App Developer Studio
+            </span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+                Membangun Aplikasi Android yang <span class="text-indigo-600">Bermanfaat, Aman & Ramah Keluarga</span>
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-8 leading-relaxed">
+                CendekiaWorks berkomitmen mengembangkan aplikasi dan perangkat lunak mobile berkualitas tinggi dengan standar privasi ketat serta pengalaman pengguna yang nyaman untuk seluruh usia.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#about" class="bg-indigo-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg shadow-indigo-200 hover:bg-indigo-700 transition">
+                    Tentang Studio Kami
+                </a>
+                <a href="#privacy" class="bg-white border border-slate-300 text-slate-700 px-6 py-3 rounded-xl font-semibold hover:bg-slate-50 transition">
+                    Kebijakan Privasi (COPPA)
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- VALUES & FOCUS SECTION -->
+    <section class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Fokus & Prinsip Pengembangan</h2>
+            <p class="text-slate-600 mt-2 text-sm sm:text-base">Standar utama yang kami terapkan dalam setiap aplikasi yang kami rilis ke publik.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white border border-slate-200/80 rounded-2xl p-7 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-xl mb-5">
+                    <i class="fa-solid fa-shield-heart"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Ramah Anak & Keluarga</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Konten dirancang bersih, edukatif, dan bebas dari unsur berbahaya, serta mematuhi ketentuan Google Play Families Policy.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white border border-slate-200/80 rounded-2xl p-7 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-xl mb-5">
+                    <i class="fa-solid fa-user-lock"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Perlindungan Privasi (COPPA)</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Kami tidak mengumpulkan data pribadi sensitif (PII) dari pengguna anak-anak dan hanya bermitra dengan jaringan periklanan tersertifikasi.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white border border-slate-200/80 rounded-2xl p-7 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-violet-100 text-violet-600 rounded-xl flex items-center justify-center text-xl mb-5">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Ringan & Efisien</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Aplikasi dioptimalkan agar berukuran ringan, hemat memori, dan dapat berjalan lancar di berbagai tipe perangkat Android.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-16 bg-white border-y border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+            <h2 class="text-3xl font-bold text-slate-900 mb-6">Tentang CendekiaWorks</h2>
+            <p class="text-slate-600 leading-relaxed text-base mb-6">
+                <strong>CendekiaWorks</strong> adalah developer independen yang berfokus pada perancangan dan pengembangan aplikasi mobile Android. Kami percaya bahwa teknologi harus dapat diakses secara mudah, intuitif, dan memberikan rasa aman bagi pengguna dari segala tingkatan usia.
+            </p>
+            <p class="text-slate-600 leading-relaxed text-base">
+                Seluruh produk kami dikembangkan dengan standar kepatuhan regulasi privasi global, memastikan ekosistem aplikasi yang sehat, transparan, dan terpercaya.
+            </p>
+        </div>
+    </section>
+
+    <!-- PRIVACY POLICY SECTION (SYARAT UTAMA KIDOZ / COPPA) -->
+    <section id="privacy" class="py-16 max-w-4xl mx-auto px-4 sm:px-6">
+        <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-sm">
+            <h2 class="text-2xl font-bold text-slate-900 mb-2">Kebijakan Privasi (Privacy Policy)</h2>
+            <p class="text-xs text-slate-400 mb-6">Berlaku untuk seluruh aplikasi yang dipublikasikan oleh CendekiaWorks</p>
+
+            <div class="space-y-5 text-sm text-slate-600 leading-relaxed">
+                <p>
+                    <strong>CendekiaWorks</strong> sangat menghargai dan melindungi privasi para pengguna aplikasi kami. Kebijakan Privasi ini menjelaskan bagaimana kami memperlakukan data pengguna pada seluruh aplikasi Android yang kami rilis.
+                </p>
+
+                <div>
+                    <h3 class="text-base font-semibold text-slate-800 mb-1">1. Privasi Anak dan Kepatuhan COPPA</h3>
+                    <p>
+                        Aplikasi kami yang ditujukan untuk anak-anak dan keluarga <strong>TIDAK mengumpulkan, membagikan, atau menyimpan</strong> Informasi Identifikasi Pribadi (PII) seperti nama lengkap, alamat fisik, nomor telepon, atau data lokasi presisi.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-base font-semibold text-slate-800 mb-1">2. Iklan Pihak Ketiga (Third-Party Ad Networks)</h3>
+                    <p>
+                        Aplikasi kami dapat menampilkan iklan melalui penyedia jaringan iklan pihak ketiga yang telah mematuhi aturan privasi anak (seperti Kidoz dan program keluarga Google). Jaringan periklanan ini hanya mengumpulkan pengenal non-pribadi untuk penayangan iklan yang aman, terkontekstualisasi, dan sesuai batasan usia.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-base font-semibold text-slate-800 mb-1">3. Izin Perangkat (Device Permissions)</h3>
+                    <p>
+                        Kami hanya meminta izin perangkat seminimal mungkin yang diperlukan semata-mata untuk kelancaran fungsi teknis utama aplikasi.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-base font-semibold text-slate-800 mb-1">4. Hubungi Kami Mengenai Privasi</h3>
+                    <p>
+                        Apabila Anda memiliki pertanyaan, klarifikasi, atau masukan mengenai kebijakan privasi ini, silakan hubungi kami secara langsung melalui email: <strong class="text-slate-800">cendekiaworks@gmail.com</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-14 bg-slate-900 text-white mt-auto">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-2">Hubungi CendekiaWorks</h2>
+            <p class="text-slate-400 text-sm mb-6 max-w-md mx-auto">Untuk kebutuhan kerjasama, perizinan, atau dukungan teknis, silakan hubungi alamat email resmi kami.</p>
+            
+            <a href="mailto:cendekiaworks@gmail.com" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 rounded-xl font-semibold transition text-sm shadow-md">
+                <i class="fa-solid fa-envelope"></i> Kirim Email ke Developer
+            </a>
+            
+            <p class="text-xs text-slate-500 mt-6">
+                Official Support: <span class="text-slate-300 font-mono">cendekiaworks@gmail.com</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-500 py-6 border-t border-slate-800 text-xs">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; CendekiaWorks. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="#home" class="hover:text-slate-300 transition">Home</a>
+                <a href="#about" class="hover:text-slate-300 transition">About</a>
+                <a href="#privacy" class="hover:text-slate-300 transition">Privacy Policy</a>
+                <a href="#contact" class="hover:text-slate-300 transition">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
